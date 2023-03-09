@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/resposive.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng KingPig
+
+                            <!-- Header QR Code -->
+                            <div class="header__qr">
+                                <img src="img/QR_code.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="img/gg.png" alt="Google Play" class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="img/appstore.jfif" alt="App Store" class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="img/Ohui.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Xác thực chính hãng nguồn gốc các sản phẩm Ohui</span>
+                                                <span class="header__notify-descriotion">HiddenTag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="img/moto.jfif" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Sale Sốc xe moto giảm giá đến 50%</span>
+                                                <span class="header__notify-descriotion">Giá chỉ còn 375.000.000 (giá gốc: 675.250.000 vnd).</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="img/aotu.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Hội ae cây khế chính thức tặng free bộ sản phẩm: Bộ quần áo tù</span>
+                                                <span class="header__notify-descriotion">Dành cho anh em nào thích ăn cơm mà không cần tốn tiền mua.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <button style="border: none; background: none;" class="js-buy-ticket header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</button>
+                        <button style="border: none; background: none;" class="js-buy-ticket header__navbar-item header__navbar-item--strong">Đăng nhập</button>
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="img/anhDaiDien.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Duy Thành</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="HomePage.html">Quay về trang chính</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+
+                    <div class="header__logo1 hide-on-tablet">
+                        <p id="img_logo">KingPig  | Cart</p>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm" >
+                            
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem dưỡng da</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Xe moto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong shop</span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
+        </header>
+
+        <div id="content">
+            <div class="menu">
+                <div class="shippee">
+                    <i class="ticket-icon1 fa fa-car"></i>
+                    <p class="p_voucher_shippee">Nhấn vào mục Mã giảm giá ở cuối trang để hưởng miễn phí vận chuyển bạn nhé!</p>
+                </div>
+                <div class="contnet-sesson1">
+                    <div class="header-sesson1">
+                        <div class="box">
+                            <input type="checkbox" id="check">
+                            <div class="box-like">
+                                <div class="like">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                            </div>
+                            <div class="name-shop">KingPig</div>
+                            <div class="name-icon"><i class="ti_icon fa fa-comments"></i></div>
+                        </div>
+                        <div class="edit">
+                            <i class="fa fa-cog"></i>
+                        </div>
+                    </div>
+
+                    <div class="body-sesson1">
+                        <input type="checkbox" id="check">
+                        <div class="img_body">
+                            <img src="img/aoda.jfif" alt="" id="style-img">
+                        </div>
+                        <div class="text-body">
+                            <div class="text">
+                                Áo dạ đi trời nóng phong cách dở hơi
+                            </div>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">1.000.000đ</span>
+                                <span class="home-product-item__price-current">999.000đ</span>
+                            </div>
+                            <div class="plash-sale">
+                                <span class="sale">P<i class="fa fa-bolt"></i>ASH SALE bắt đầu lúc 12:00 am</span>
+                            </div>
+                            <div class="number">
+                                <button class="btn_number"><i class="btn-icon fa fa-minus" id="plus"></i></button>
+                                <div class="number_value"> 1
+                                </div>
+                                <button class="btn_number"><i class="btn-icon fa fa-plus" id="plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="voucher">
+                        <i class="ticket-icon_voucher fa fa-cart-arrow-down"></i>
+                        <p class="p_voucher"> Shop Voucher giảm giá đến 100%</p>
+                        <div class="like_voucher">
+                            <span>Mới</span>
+                        </div>
+                        <a href="#" class="a_voucher">Xem thêm voucher</a>
+                    </div>
+
+                    <div class="car">
+                        <i class="ticket-icon fa fa-car"></i>
+                        <p class="p_voucher"> Giảm 15.000đ cho đơn tối thiểu 1 tỷ; Giảm ngay 25.000đ cho đơn hàng tối thiểu 100.000đ</p>
+                        <a href="" class="a_voucher">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+
+                <div class="contnet-sesson1">
+                    <div class="header-sesson1">
+                        <div class="box">
+                            <input type="checkbox" id="check">
+                            <div class="box-like">
+                                <div class="like">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                            </div>
+                            <div class="name-shop">NinJaGo</div>
+                            <div class="name-icon"><i class="ti_icon fa fa-comments"></i></div>
+                        </div>
+                        <div class="edit">
+                            <i class="fa fa-cog"></i>
+                        </div>
+                    </div>
+
+                    <div class="body-sesson1">
+                        <input type="checkbox" id="check">
+                        <div class="img_body">
+                            <img src="img/lego.jpg" alt="" id="style-img">
+                        </div>
+                        <div class="text-body">
+                            <div class="text">
+                                Bộ lego xếp hình dành cho người lớn vừa phải
+                            </div>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">800.000đ</span>
+                                <span class="home-product-item__price-current">500.000đ</span>
+                            </div>
+                            <div class="plash-sale">
+                                <span class="sale">P<i class="fa fa-bolt"></i>ASH SALE bắt đầu lúc 12:00 pm</span>
+                            </div>
+                            <div class="number">
+                                <button class="btn_number"><i class="btn-icon fa fa-minus" id="plus"></i></button>
+                                <div class="number_value"> 2
+                                </div>
+                                <button class="btn_number"><i class="btn-icon fa fa-plus" id="plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="voucher">
+                        <i class="ticket-icon_voucher fa fa-cart-arrow-down"></i>
+                        <p class="p_voucher"> Shop Voucher giảm giá đến 1000%</p>
+                        <div class="like_voucher">
+                            <span>Mới</span>
+                        </div>
+                        <a href="#" class="a_voucher">Xem thêm voucher</a>
+                    </div>
+
+                    <div class="car">
+                        <i class="ticket-icon fa fa-car"></i>
+                        <p class="p_voucher"> Giảm 15.000đ phí vận chuyển đơn tối thiểu 50.000đ; Giảm 25.000đ phí vận chuyển đơn tối thiểu 99.000đ</p>
+                        <a href="" class="a_voucher">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+
+                <div class="contnet-sesson1">
+                    <div class="header-sesson1">
+                        <div class="box">
+                            <input type="checkbox" id="check">
+                            <div class="box-like">
+                                <div class="like">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                            </div>
+                            <div class="name-shop" style="margin-top: 15px;">UnderwearFE</div>
+                            <div class="name-icon"><i class="ti_icon fa fa-comments"></i></div>
+                        </div>
+                        <div class="edit">
+                            <i class="fa fa-cog"></i>
+                        </div>
+                    </div>
+
+                    <div class="body-sesson1">
+                        <input type="checkbox" id="check">
+                        <div class="img_body">
+                            <img src="img/noiy.jfif" alt="" id="style-img">
+                        </div>
+                        <div class="text-body">
+                            <div class="text">
+                                Set nội y siêu đẹp dành cho chị em phụ nữ hàng chất lượng
+                            </div>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">350.000đ</span>
+                                <span class="home-product-item__price-current">300.000đ</span>
+                            </div>
+                            <div class="plash-sale">
+                                <span class="sale">P<i class="fa fa-bolt"></i>ASH SALE bắt đầu lúc 09:00 am</span>
+                            </div>
+                            <div class="number">
+                                <button class="btn_number"><i class="btn-icon fa fa-minus" id="plus"></i></button>
+                                <div class="number_value"> 5
+                                </div>
+                                <button class="btn_number"><i class="btn-icon fa fa-plus" id="plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="voucher">
+                        <i class="ticket-icon_voucher fa fa-cart-arrow-down"></i>
+                        <p class="p_voucher"> Shop Voucher giảm giá đến 50%</p>
+                        <div class="like_voucher">
+                            <span>Mới</span>
+                        </div>
+                        <a href="#" class="a_voucher">Xem thêm voucher</a>
+                    </div>
+
+                    <div class="car">
+                        <i class="ticket-icon fa fa-car"></i>
+                        <p class="p_voucher"> Giảm 15.000đ cho đơn tối thiểu 10 tỷ</p>
+                        <a href="" class="a_voucher">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="buy_bottom">
+            <div class="start">
+                <button class="buy_button" onclick="location.href='index.html'"><i class="fa fa-chevron-left" style="font-size: 20px;"></i></button>
+                <div class="bottom_check">
+                    <button class="checkbox"></button>
+                </div>
+                <div class="name_total">
+                    <p class="totalname">Tất cả(3)</p>
+                </div>
+                <button class="delete_button">Xóa</button>
+                <a href="" class="a_start">Lưu vào mục Đã Th...</a>
+            </div>
+
+            <div class="end">
+                <div class="pay">
+                    <p class="p_pay" style="margin-bottom: 5px;">Tổng thanh toán:</p>
+                    <span class="home-product-item__price-current" style="color: #fff;">999.000.000đ</span>
+                </div>
+                <div class="pay_product">
+                    <button class="js-buy-ticket pay_button">Mua Hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="model js-model">
+        <div class="model-container js-model-container">
+            <div class="model-close js-model-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="model-header">
+                <i class="model-icon ti-bag">
+                    Direct payment
+                </i>
+            </header>
+
+            <div class="model-body">
+                <label for="ticket-quatity" class="model-label">
+                    <i class="fa fa-location-arrow"></i> <!--Tạo icon-->
+                    Address
+                </label>
+                <input id="ticket-quatity" type="text" class="model-input" placeholder="Your address...">
+
+                <label for="ticket-email" class="model-label">
+                    <i class="fa fa-user"></i>
+                    Send To
+                </label>
+                <input id="ticket-email" type="text" class="model-input" placeholder="Enter email...">
+
+                <label for="ticket-phone" class="model-label">
+                    <i class="fa fa-mobile"></i>
+                    Phone
+                </label>
+                <input id="ticket-phone" type="text" class="model-input" placeholder="Enter number...">
+
+                <button id="buy-tickets">
+                    Pay
+                    <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <div class="pay" style="float: right;">
+                <p class="p_pay_modal" style="color: black; font-size: 16px;">Tổng thanh toán:</p>
+                <span class="home-product-item__price-current" style="font-size: 16px;">999.000.000đ</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const model = document.querySelector('.js-model')
+        const modelClose = document.querySelector('.js-model-close')        
+        const modelContainer = document.querySelector('.js-model-container')
+        // Hàm hiển thị (thêm class open vào model)
+        function showBuyTickets(){
+            model.classList.add('open')
+            
+        }
+        
+        // Gỡ bỏ class model đi
+        function hideBuyTickets(){
+            model.classList.remove('open')
+            
+        }
+
+        // Lặp nếu có nhiều thẻ
+        for(const buyBtn of buyBtns) {
+            //addEventListener lắng nghe hành vi click khi có người gọi đến nó
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        modelClose.addEventListener('click',hideBuyTickets)
+        model.addEventListener('click',hideBuyTickets)
+        modelContainer.addEventListener('click', function (event) {
+            event.stopPropagation() //dừng nổi bọt để không bị bấm vào
+        })
+    </script>
+</body>
+</html>
